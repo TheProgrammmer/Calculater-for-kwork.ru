@@ -48,6 +48,15 @@ input {
 	font-size: 34px;
 	text-align: center;
 	line-height: 75px;
+	position: relative;
+}
+
+.menu>a {
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	width: 100%;
 }
 
 #first {
@@ -183,9 +192,19 @@ select {
 }
 
 .prof__sist-props {
-	display: flex;
-	flex-wrap: wrap;
 	padding-bottom: 46px;
+}
+
+.prof__sist-props-options {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prof__sist-props-option {
+	flex: 1 1;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 35px;
 }
 
 .window__props-size-hw {
@@ -384,23 +403,25 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
 
 	#first{
-		width: 100%;
-		max-width: 480px;
+		width: 500px;
 	}
 
 	#menu{
-		padding-left: 30px;
+		padding-left: 20px;
 		padding-right: 20px;
 	}
 
 	.menu {
 		height: 45px;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 18px;
 		text-align: start;
+	}
+	.menu:first-of-type {
+		margin-right: 20px;
 	}
 
 	.window__props-items {
@@ -507,6 +528,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
 	.bid {
 		margin: 0 auto 0 127px;
+	}
+
+	.prof__sist-props-options {
+		display: block;
+	}
+
+	.prof__sist-props-option {
+		width: 100%;
 	}
 	
 }
