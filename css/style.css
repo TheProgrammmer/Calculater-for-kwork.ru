@@ -250,11 +250,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .bid {
 	background: #a0046c;
 	cursor: pointer;
-<<<<<<< HEAD
 	margin: 0 360px;
-=======
-	margin-left: 360px;
->>>>>>> c4319eef4a718e6fec06be5dd7b5edc5648e5aac
 }
 .big-window {
 	width: 155px;
@@ -496,10 +492,6 @@ input[type="number"]::-webkit-inner-spin-button {
 		flex-wrap: wrap;
 		width: 480px;
 	}
-<<<<<<< HEAD
-	.bid {
-		margin: 0 auto 0 127px;
-=======
 	
 	.prof__sist > input {
 		width: 242px;
@@ -514,8 +506,7 @@ input[type="number"]::-webkit-inner-spin-button {
 	}
 
 	.bid {
-		margin: auto;
->>>>>>> c4319eef4a718e6fec06be5dd7b5edc5648e5aac
+		margin: 0 auto 0 127px;
 	}
 	
 }
