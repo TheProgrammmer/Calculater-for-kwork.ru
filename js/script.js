@@ -1,8 +1,3 @@
-$('.menu').click(function(){
-	$('.menu').removeClass('selected_menu');
-	$(this).addClass('selected_menu');
-});
-
 $('.wind-type').click(function(){
 	$('.wind-type').removeClass('selected_window');
 	$(this).addClass('selected_window');
@@ -21,6 +16,7 @@ $('.wind-type').click(function(){
 		break;
 		case 4:
 			$('.wsize img').css({'width': '69px','height': '173px'});
+			$('.for_door').css({display: 'block'});
 		break;
 	}
 	$('.wsize img').attr('src','img/big-'+i+'.jpg');
@@ -34,13 +30,18 @@ $('.open-type').click(function(){
 $('.checkbox').click(function(){
 	$(this).toggleClass('arrow-img');
 });
+let window_size = $('html,body').width();
+let pos = 972;
+if(window_size < 480) {
+	pos = 32;
+}
 function move2(){
-	$('.move-btn').css({'background': '#a0046c'});
 	$('html,body').mousemove(function(e){
-		let x = e.pageX - 972, number;
+		let x = e.pageX - pos, number;
 		if(x < 0){
 			x = 0;
 		}
+		console.log(e.pageX);
 		if(x > 424){
 			x = 425; number = 3000;
 		} else {
@@ -62,7 +63,6 @@ function move2(){
 	});
 }
 function move1(){
-	$('.move-btn-2').css({'background': '#a0046c'});
 	$('html,body').on('mousemove',function(e){
 		let y = e.pageY-1400, number;
 		if(y > 375){

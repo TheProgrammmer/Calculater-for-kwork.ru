@@ -84,18 +84,27 @@ input {
 	display: flex;
 	margin: 66px 360px;
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}
 .open-type {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: 20px;
 	background: #f8f7f7;
-	width: 175px;
-	height: 165px;
+	width: 168px;
+	height: 158px;
 }
 .open-type img {
 	border: 1px solid #f2efef;
-	cursor: pointer;
+	width: 149px;
+	height: 139px;
+}
+.open-3 img {
+	width: 133px;
+	height: 139px;
 }
 .selected_window {
 	transform: scale(1.1);
@@ -146,7 +155,7 @@ input {
 	justify-content: flex-start;
 	width: 600px;
 	height: 60px;
-	padding-bottom: 20px;
+	padding-bottom: 16.5px;
 }
 .prof__sist-1 {
 	padding: 40px 0;
@@ -336,7 +345,7 @@ select {
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background: white;
+	background: #a0046c;
 	position: absolute;
 	bottom: -5px;
 	z-index: 1;
@@ -366,6 +375,11 @@ select {
 	margin-left: 5px;
 	z-index: 4;
 }
+/*<<<<<<< HEAD*/
+.for_door {
+	display: none;
+}
+/*=======*/
 
 
 
@@ -487,3 +501,5 @@ select {
 	}
 	
 }
+/*>>>>>>> 9a76356d8b34bedc90424ad041d6227e77e5d091
+*/
