@@ -1,0 +1,367 @@
+html {
+	min-height: 100%;
+	user-select: none;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	background-color: white;	
+}
+@font-face {
+	font-family: Roboto;
+	src: url('../font/regular.ttf');
+}
+@font-face {
+	font-family: One;
+	src: url('../font/one.ttf');
+}
+@font-face {
+	font-family: muller;
+	src: url('../font/muller.otf');
+}
+@font-face {
+	font-family: Light;
+	src: url('../font/Roboto-Light.ttf');
+}
+* {
+	font-family: Roboto;
+}
+img {
+	max-width: 100%;
+	height: 153px;
+}
+input {
+	outline: none;
+}
+#menu {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 224px;
+}
+
+.menu {
+	height: 79px;
+	width: 564px;
+	cursor: pointer;
+	font-size: 34px;
+	text-align: center;
+	line-height: 75px;
+}
+
+#first {
+	width: 1920px;
+}
+
+.selected_menu {
+	background-color: #f8f7f7;
+	color: #a0046c;
+}
+
+.window__props-types {
+	display: flex;
+	margin: 0 360px 66px 360px;
+}
+
+.wind-type {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+	margin-top: 66px;
+	border: .5px solid #f2efef;
+	width: 269px;
+	transition: .1s;
+	height: 260px;
+}
+.wind-type img {
+	cursor: pointer;
+}
+.open{
+	display: flex;
+	margin: 66px 360px;
+}
+.open-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	background: #f8f7f7;
+	width: 175px;
+	height: 165px;
+}
+.open-type img {
+	border: 1px solid #f2efef;
+	cursor: pointer;
+}
+.selected_window {
+	transform: scale(1.1);
+	transition: .1s;
+}
+.selected_open-type{
+	background: #94cf1c;
+}
+.wind-type-name {
+	margin-bottom: 20px; 
+	font-size: 18px;
+	font-family: Light;
+}
+
+.num {
+	margin: 66px 17px 0 375px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	font-family: One;
+	font-size: 25px;
+	line-height: 50px;
+	color: white;
+	font-family: muller;
+	background-color: #a6ce39;
+}
+.type-name {
+	font-size: 34px;
+}
+
+.type-checked {
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.window__props {
+	background-color: #f8f7f7;
+}
+
+.window__props-size {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.prof__sist {
+	display: flex;
+	justify-content: flex-start;
+	width: 600px;
+	height: 60px;
+	padding-bottom: 20px;
+}
+.prof__sist-1 {
+	padding: 40px 0;
+}
+
+.prof__sist-items {
+	display: inline-block;
+	max-width: 100%;
+	height: 60px;
+	width: 222px;
+	background: #bfbfbf;
+	margin: 0;
+	line-height: 60px;
+	color: white;
+	text-align: center;
+}
+
+select {
+	font-size: 24px;
+	height: 60px;
+	width: 345px;
+	margin: 0;
+	padding: 16px;
+	float: left;
+}
+
+.prof__sist-props {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 46px;
+}
+
+.window__props-size-hw {
+	margin: 66px 0 66px 360px;
+	width: 600px;
+}
+
+.num34 {
+	margin: 66px 17px 0 0;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 25px;
+	line-height: 50px;
+	color: white;
+	font-family: muller;
+	background-color: #a6ce39;
+}
+
+.prof__sist-props-items {
+	margin-bottom: 35px;
+}
+
+.checkbos {
+	margin-left: 25px;
+	margin-right: 42px;
+}
+
+.prof__sist > input {
+	font-family: Roboto;
+	font-size: 24px;
+	height: 60px;
+	width: 345px;
+	padding: 16px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wsize {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 0 35px 0;
+	width: 500px;
+	height: 360px;
+	background: white;
+	border: .5px solid #f2efef;
+}
+
+.window__props-size-image {
+	margin: 66px 0;
+}
+.size::-webkit-outer-spin-button,
+.size::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.size {
+    -moz-appearance: textfield;
+}
+.bid {
+	background: #a0046c;
+	cursor: pointer;
+}
+.big-window {
+	width: 155px;
+	height: 255px;	
+}
+
+.circle {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: white;
+	position: absolute; /*vor klornery helnen karmir gci vra*/ 
+}
+.animate {
+	position: relative; /*vor klornery helnen karmir gci vra*/  
+}
+.size-value {
+	font-size: 20px;
+	position: absolute;
+}
+.size-value1 {
+	right: -75px;
+	top: 35px;
+}
+.line {
+	width: 15px;
+	height: 401px;
+	background: white;
+	border-radius: 10px;
+}
+.line2 {
+	width: 450px;
+	height: 15px;
+}
+.windowsize {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+}
+.animate2 .circle {
+	top: -5px;
+}
+.animate2 {
+	position: absolute;
+	top: 445px;
+	left: 0;
+}
+.circle2 {
+	right: 0;
+}
+.size-value2 {
+	position: absolute;
+	right: -50px;
+	bottom: -5px;
+}
+.animate2 {
+	display: inline-block;
+}
+.first-size-animate {
+	position: absolute;
+	right: -78px;
+	top: 60px;
+}
+.first-animate {
+	margin-left: 10px;
+}
+.circle1-2 {
+	bottom: 0;
+}
+.line1 {
+	margin-left: 5px;
+}
+.minus1 {
+	margin-bottom: 0 !important;
+}
+.checkbox {
+	border: .8px solid #f2efef;
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0 18px;
+	background: white;
+}
+.arrow-img{
+	background-image: url('../img/arrow.png');
+	background-size: 65%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.move-btn, .move-btn-2 {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	bottom: -5px;
+	z-index: 1;
+	cursor: pointer;
+}
+.prof__sist-1 select {
+	cursor: pointer;
+}
+.open-2, .open-3, .open-4 {
+	display: none;
+}
+.add-2 {
+	position: absolute;
+	background-color: #a0046c;
+	color: #a0046c;
+	height: 100%;
+	z-index: 5;
+	left: 3px; 
+
+}
+.add-1 {
+	position: absolute;
+	background-color: #a0046c;
+	color: #a0046c;
+	width: 75%;
+	bottom: 4px;
+	margin-left: 5px;
+	z-index: 4;
+}
