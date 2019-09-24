@@ -103,7 +103,6 @@ $('.animate2').on('mousedown',function(){
 });
 $('html,body').on('mouseup',function(){
 	$('html,body').unbind('mousemove',move2());
-	// $('.move-btn').css({'display': 'none'});
 });
 
 $('.first-animate').on('mousedown',function(){
@@ -111,6 +110,17 @@ $('.first-animate').on('mousedown',function(){
 });
 $('html,body').on('mouseup',function(){
 	$('html,body').unbind('mousemove',move1());
-	// $('.move-btn-2').css({'display': 'none'});
 });
 
+$('.bid').click(function(){
+	$('.black').css({'display': 'block'});
+	$('.pop-up').css({'display': 'block'});
+	$('.black').not('.bid').click(function(){
+		$('.pop-up').css({'display': 'none'});
+		$('.black').css({'display': 'none'});
+	});
+});
+$('.pop-up img').click(function(){
+		$('.pop-up').css({'display': 'none'});
+		$('.black').css({'display': 'none'});
+});
