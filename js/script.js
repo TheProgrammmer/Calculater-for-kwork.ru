@@ -1,3 +1,4 @@
+let page = $('#first').attr('class');
 $('.wind-type').click(function(){
 	$('.wind-type').removeClass('selected_window');
 	$(this).addClass('selected_window');
@@ -19,7 +20,11 @@ $('.wind-type').click(function(){
 			$('.for_door').css({display: 'block'});
 		break;
 	}
-	$('.wsize img').attr('src','img/big-'+i+'.jpg');
+	if(page == 'tree'){
+		$('.wsize img').attr('src','img/big-'+i+'.jpg');
+	} else {
+		$('.wsize img').attr('src','img/plastic/big-'+i+'.jpg');
+	}
 });
 
 $('.open-type').click(function(){
