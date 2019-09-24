@@ -31,15 +31,17 @@ $('.checkbox').click(function(){
 	$(this).toggleClass('arrow-img');
 });
 let window_size = $('html,body').width();
-console.log(window_size);
+let pos = 972;
+if(window_size < 480) {
+	pos = 32;
+}
 function move2(){
 	$('html,body').mousemove(function(e){
-		let x = e.pageX - 972, number;
-		console.log("c "+e.clientX);
-		console.log("p "+e.pageX);
+		let x = e.pageX - pos, number;
 		if(x < 0){
 			x = 0;
 		}
+		console.log(e.pageX);
 		if(x > 424){
 			x = 425; number = 3000;
 		} else {
